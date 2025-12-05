@@ -89,6 +89,13 @@ p.tagline {
   font-weight: bold;
 }
 
+.slogan {
+  font-size: 1.4em;
+  color: #0DCAF0;
+  text-shadow: 0 0 10px #0DCAF0;
+  margin-top: 20px;
+}
+
 .cta {
   margin-top: 30px;
   padding: 15px 30px;
