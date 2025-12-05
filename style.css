@@ -43,6 +43,23 @@ nav a:hover {
   background: radial-gradient(circle at center, #0DCAF0 0%, #000 70%);
 }
 
+.content {
+  padding: 100px 20px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content .logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  display: block;
+  object-fit: cover;
+  filter: drop-shadow(0 0 10px #0DCAF0) drop-shadow(0 0 20px #4682B4);
+}
+
 .logo {
   width: 300px;
   height: 300px;
@@ -57,6 +74,11 @@ h1 {
   color: #0DCAF0;
   text-shadow: 0 0 20px #0DCAF0, 0 0 40px #4682B4;
   margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
 p.tagline {
