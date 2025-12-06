@@ -114,13 +114,67 @@ p.tagline {
   color: #fff;
 }
 
-footer {
-  background: #111;
-  color: #aaa;
-  text-align: center;
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #1a1a1a;
+  border: 1px solid #0DCAF0;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(13, 202, 240, 0.3);
+  text-align: left; /* Align text within form to left */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0DCAF0;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 10px;
+  border: 1px solid #4682B4;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-color: #0DCAF0;
+  box-shadow: 0 0 8px rgba(13, 202, 240, 0.6);
+  outline: none;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
   padding: 15px;
-  font-size: 0.9em;
-  border-top: 1px solid #0DCAF0;
+  background: #0DCAF0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  text-shadow: 0 0 5px #000;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #4682B4;
+  color: #fff;
 }
 
 footer {
