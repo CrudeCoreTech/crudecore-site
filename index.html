@@ -7,22 +7,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="hero">
+  <div id="splash-screen">
     <img src="logo.png" alt="CrudeCore Logo" class="logo" />
-    <h1>CRUDECORE TECHNOLOGIES</h1>
-    <p class="tagline">Powering the Future of Software</p>
-    <p class="slogan">Your Vision, Engineered.</p>
   </div>
 
-  <footer>
-    &copy; 2025 CrudeCore Technologies — All Rights Reserved
-  </footer>
+  <div id="main-content" style="display: none;">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="hero">
+      <img src="logo.png" alt="CrudeCore Logo" class="logo" />
+      <h1>CRUDECORE TECHNOLOGIES</h1>
+      <p class="tagline">Powering the Future of Software</p>
+      <p class="slogan">Your Vision, Engineered.</p>
+    </div>
+
+    <footer>
+      &copy; 2025 CrudeCore Technologies — All Rights Reserved
+    </footer>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      const splash = document.getElementById('splash-screen');
+      const main = document.getElementById('main-content');
+      splash.style.opacity = 0;
+      setTimeout(() => {
+        splash.style.display = 'none';
+        main.style.display = 'block';
+      }, 500); // fade out duration
+    }, 2000); // splash screen duration
+  </script>
 </body>
 </html>
